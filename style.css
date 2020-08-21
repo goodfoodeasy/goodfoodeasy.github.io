@@ -10,7 +10,7 @@ header  {
 }
 
 body {
-    background-color: #fff;
+    background-color: #B3FCB9;
     font-family: 'Raleway', sans-serif;
   }
 
@@ -18,9 +18,9 @@ h1 {
   color: darkblue;
   font-size: 42px;
   font-weight: 600;
-  text-align: center;
-  border: 3px dotted darkblue;
-  border-radius: 10px;
+  background-color: lightgrey;
+  opacity: .75;
+  margin: 5%;
 }
 
 h1 a  {
@@ -46,17 +46,17 @@ h3 {
   color: red;
   font-size: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 p {
   color: darkblue;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 20px;
   font-weight: 600;
-  border-left: dotted 3px lightblue;
   text-align: left;
-  padding: 5px 5px;
+  width: 80%;
+  margin: 5em;
 }
 
 ul {
@@ -72,8 +72,9 @@ ul {
   margin: auto auto; 
   text-align: center;
   width: 75%;  
-  overflow: scroll;
   padding-top: 120px;
+  background-image: url("images/sunflowers.jpg");
+  background-size: contain;
 }
 
 #topmenu  {
@@ -81,35 +82,6 @@ ul {
   height: 140px;
   align-items: center;
   flex-direction: row;
-}
-
-.logo {
-  min-width: 200px;
-  max-width: 400px;
-}
-
-.logosmall  {
-  min-width: 200px;
-  max-width: 200px;
-  color: darkblue;
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  border: 3px dotted darkblue;
-  border-radius: 10px;
-  text-decoration: none;
-  margin-bottom: 50px;
-
-}
-
-.logosmall a{
-  text-decoration: none;
-}
-
-.logosmall a:hover  {
-  text-decoration: none;
-  font-weight:    800;
-  text-decoration: none;
 }
 
 /*top of page navigation*/
@@ -123,8 +95,12 @@ ul {
   letter-spacing: .2rem;
   color:  darkgray;
   display:inline;
-  padding: 10px 10px;
 
+}
+
+.navigation li:not(:last-child)::after {
+  content: "|";
+  margin:  0px 10px;
 }
 
 .navigation a {
@@ -147,7 +123,7 @@ ul {
 .pull-quote {
   margin: 5px 5px;
   padding: 5px 5px;
-  border: dotted 2px rgb(143, 143, 197);
+  border: double 2px rgb(143, 143, 197);
   font-weight: 600;
 }
 
