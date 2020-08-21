@@ -10,7 +10,7 @@ header  {
 }
 
 body {
-    background-color: #fff;
+    background-color: #B3FCB9;
     font-family: 'Raleway', sans-serif;
   }
 
@@ -19,8 +19,6 @@ h1 {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
-  border: 3px dotted darkblue;
-  border-radius: 10px;
 }
 
 h1 a  {
@@ -28,35 +26,46 @@ h1 a  {
   color: darkblue;
 }
 
-h1 a:hover{
+h1 a:hover  {
   font-weight:    800;
   text-decoration: none;
 }
 
 h2 {
-  border: 3px dotted red;
-  color:  darkgrey;
+  color:  darkblue;
+  font-weight: 600;
   font-size: 35px;
   line-height: 48px;
   text-align: center;
   border-radius: 10px;
+  margin: 5%;
+}
+
+h2 a  {
+  text-decoration: none;
+  color: darkblue;
+}
+
+h2 a:hover  {
+  font-weight:    800;
+  text-decoration: none;
 }
 
 h3 {
   color: red;
   font-size: 26px;
   font-weight: 700;
+  text-align: center;
+  margin: 5%;
 }
 
 p {
   color: darkblue;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 20px;
   font-weight: 600;
-  border-left: dotted 3px lightblue;
   text-align: left;
-  padding: 5px 5px;
+  width: 80%;
 }
 
 ul {
@@ -69,11 +78,10 @@ ul {
 
 /* Section styles */
 #main {
-  margin: auto auto; 
-  text-align: center;
+  margin: 50px auto auto auto; 
   width: 75%;  
-  overflow: scroll;
   padding-top: 120px;
+  align-content: center;
 }
 
 #topmenu  {
@@ -83,35 +91,6 @@ ul {
   flex-direction: row;
 }
 
-.logo {
-  min-width: 200px;
-  max-width: 400px;
-}
-
-.logosmall  {
-  min-width: 200px;
-  max-width: 200px;
-  color: darkblue;
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  border: 3px dotted darkblue;
-  border-radius: 10px;
-  text-decoration: none;
-  margin-bottom: 50px;
-
-}
-
-.logosmall a{
-  text-decoration: none;
-}
-
-.logosmall a:hover  {
-  text-decoration: none;
-  font-weight:    800;
-  text-decoration: none;
-}
-
 /*top of page navigation*/
 .navigation ul {
   text-align: left;
@@ -119,12 +98,16 @@ ul {
 }
 
 .navigation li {
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: .2rem;
   color:  darkgray;
   display:inline;
-  padding: 10px 10px;
 
+}
+
+.navigation li:not(:last-child)::after {
+  content: "|";
+  margin:  0px 10px;
 }
 
 .navigation a {
@@ -144,10 +127,14 @@ ul {
   text-decoration: none;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .pull-quote {
   margin: 5px 5px;
   padding: 5px 5px;
-  border: dotted 2px rgb(143, 143, 197);
+  border: double 2px rgb(143, 143, 197);
   font-weight: 600;
 }
 
@@ -178,6 +165,7 @@ ul {
   color: lightcoral;
 }
 
+
 .footer {
   border: 1px solid LightGrey;
   position: relative;
@@ -207,6 +195,13 @@ ul {
   background: white;
   border: 1px solid red;
   color: red;
+}
+
+.image-blurred-edge {
+  background-image: url('images/sunflowers.jpg');
+  width: 300px;
+  height: 252px;
+  box-shadow: 0 0 8px 8px #B3FCB9 inset;
 }
 
 .contentgrid  {
