@@ -144,7 +144,8 @@ ul {
     font-size: 16px;
     line-height: 30px;
     font-weight: 600;
-    text-align: inherit;
+    text-align: center;
+    width: 100%;
 }
 
 .flex-container {
